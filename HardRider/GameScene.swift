@@ -10,20 +10,26 @@ import SpriteKit
 
 class GameScene: SKScene {
     
+    let myPicture = MainGameObject(imageNamed: "Spaceship")
     
     override func didMoveToView(view:SKView) {
         /* Setup your scene here */
         self.backgroundColor = UIColor.blackColor()
         
-        let myPicture = SKSpriteNode(imageNamed: "Spaceship")
         myPicture.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame))
         
         self.addChild(myPicture)
     }
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        for touch: AnyObject in touches {
+            //Get the location of your touch
+            let touchLocation = touch.locationInNode(self)
+            //Set the position of your node to that location.
+            myPicture.position = touchLocation
+        }
     }
-   
+    
     override func update(currentTime: CFTimeInterval) {
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9303AAE61CA70608009DEE54 /* MainGameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9303AAE51CA70608009DEE54 /* MainGameObject.swift */; };
 		9327F2951C888C23007ECB2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9327F2941C888C23007ECB2B /* AppDelegate.swift */; };
 		9327F2971C888C23007ECB2B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9327F2961C888C23007ECB2B /* GameScene.sks */; };
 		9327F2991C888C23007ECB2B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9327F2981C888C23007ECB2B /* GameScene.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9303AAE51CA70608009DEE54 /* MainGameObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainGameObject.swift; sourceTree = "<group>"; };
 		9327F2911C888C23007ECB2B /* HardRider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HardRider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9327F2941C888C23007ECB2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9327F2961C888C23007ECB2B /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				9327F29F1C888C23007ECB2B /* Assets.xcassets */,
 				9327F2A11C888C23007ECB2B /* LaunchScreen.storyboard */,
 				9327F2A41C888C23007ECB2B /* Info.plist */,
+				9303AAE51CA70608009DEE54 /* MainGameObject.swift */,
 			);
 			path = HardRider;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9327F2991C888C23007ECB2B /* GameScene.swift in Sources */,
+				9303AAE61CA70608009DEE54 /* MainGameObject.swift in Sources */,
 				9327F29B1C888C23007ECB2B /* GameViewController.swift in Sources */,
 				9327F2951C888C23007ECB2B /* AppDelegate.swift in Sources */,
 			);
@@ -495,6 +499,7 @@
 				9327F2BF1C888C23007ECB2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9327F2C01C888C23007ECB2B /* Build configuration list for PBXNativeTarget "HardRiderTests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +508,7 @@
 				9327F2C21C888C23007ECB2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9327F2C31C888C23007ECB2B /* Build configuration list for PBXNativeTarget "HardRiderUITests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +517,7 @@
 				9327F2C51C888C23007ECB2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
