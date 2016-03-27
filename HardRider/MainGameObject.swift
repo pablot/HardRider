@@ -10,5 +10,6 @@ import Foundation
 import SpriteKit
 
 class MainGameObject: SKSpriteNode {
+    var touchId: String?
 }
 
