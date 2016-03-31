@@ -22,31 +22,23 @@ class GameScene: SKScene {
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        for touch: AnyObject in touches {
-            if (myPicture.position == touch.locationInNode(self)){
-                myPicture.touchId = touch.publicID
-            }
-        }
-    }
-    
-    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        for touch: AnyObject in touches {
-            if myPicture.touchId == touch.publicID
-            {
-                myPicture.position = touch.locationInNode(self)
-            }
+        if nodeAtPoint(touches.first!.locationInNode(self)) == myPicture {
+            myPicture.selected = true
         }
     }
     
     override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        for touch: AnyObject in touches {
-            if myPicture.touchId == touch.publicID
-            {
-                myPicture.touchId = nil
-            }
+        if nodeAtPoint(touches.first!.locationInNode(self)) == myPicture {
+            myPicture.selected = false
         }
-     }
+    }
     
-    override func update(currentTime: CFTimeInterval) {
+    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        if myPicture.selected! {
+            myPicture.position = touches.first!.locationInNode(self)
+        }
+    }
+    
+   override func update(currentTime: CFTimeInterval) {
     }
 }
