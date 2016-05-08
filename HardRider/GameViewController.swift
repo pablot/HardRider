@@ -29,16 +29,16 @@ class GameViewController: UIViewController {
             skView.presentScene(scene)
         }
     }
-
+    
     override func shouldAutorotate() -> Bool {
-        return true
+        return false
     }
 
     override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
         if UIDevice.currentDevice().userInterfaceIdiom == .Phone {
-            return .AllButUpsideDown
+            return .Portrait
         } else {
-            return .All
+            return .Portrait
         }
     }
 
